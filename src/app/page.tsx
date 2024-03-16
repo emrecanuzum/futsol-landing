@@ -31,7 +31,7 @@ const LandingPage = () => {
               className="uppercase text-5xl md:text-7xl"
               style={{ transition: "transform 0.3s ease-in-out" }}
               onMouseOver={(e) => {
-                e.currentTarget.style.transform = "scale(1.2)";
+                e.currentTarget.style.transform = "scale(1.5)";
               }}
               onMouseOut={(e) => {
                 e.currentTarget.style.transform = "scale(1)";
