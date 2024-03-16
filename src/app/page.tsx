@@ -10,9 +10,9 @@ const LandingPage = () => {
   return (
     <div className="bg-[#160023] h-screen">
       <div className=" justify-center  flex max-w-screen">
-        <div className="md:w-full bg-[#160023] w-[150vw]  md:h-screen text-auto justify-center md:flex">
+        <div className="md:w-full bg-[#160023] w-[150vw]  md:min-h-screen  text-auto justify-center md:flex">
           <Image
-            className=" scale-[3] top-1/3 md:top-0 fixed aspect-video  md:scale-100 md:relative w-screen md:w-[96vw] mt-10 "
+            className=" scale-[3] overflow-auto block top-1/3 md:top-0  aspect-video  md:scale-100 md:relative w-screen md:w-[96vw] mt-10 "
             src={FootballField}
             alt="football-field"
           />
