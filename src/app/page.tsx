@@ -12,7 +12,7 @@ const LandingPage = () => {
       <div className=" justify-center  flex max-w-screen">
         <div className="md:w-full  fixed  bg-[#160023] w-screen  md:min-h-screen  text-auto justify-center md:flex">
           <Image
-            className=" scale-[3] overflow-hidden  mt-[75%] top-1/2 md:top-0  aspect-video  md:scale-100 md:relative w-screen md:w-[96vw] md:mt-10 "
+            className=" scale-[3] overflow-hidden  mt-[75%] top-1/2 md:top-0  aspect-video  md:scale-100 md:relative w-screen md:w-[96vw] md:mt-0 "
             src={FootballField}
             alt="football-field"
           />

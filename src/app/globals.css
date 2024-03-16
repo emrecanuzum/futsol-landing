@@ -56,3 +56,10 @@
   transition: 400ms mask ease;
   will-change: mask;
 }
+
+@layer base {
+  :root {
+    --color-primary: #63f3b7;
+    --color-secondary: #63f3b7;
+  }
+}
