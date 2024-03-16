@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Head from "next/head";
+
+import { Belanosima } from "next/font/google";
+
+const belanosima = Belanosima({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={belanosima.className}>{children}</body>
     </html>
   );
 }

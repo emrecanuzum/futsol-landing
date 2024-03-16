@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const plugin = require("tailwindcss/plugin");
 
 const config: Config = {
   content: [
@@ -15,6 +16,22 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/typography"),
+    plugin(
+      function ({ addVariant }: { addVariant: Function }) {
+        addVariant("glow", ".glow-capture .glow-overlay &");
+      },
+      {
+        theme: {
+          extend: {
+            boxShadow: {
+              glow: "0 0 8px var(--glow-color, rgba(255, 255, 255, 0.8))",
+            },
+          },
+        },
+      }
+    ),
+  ],
 };
 export default config;
