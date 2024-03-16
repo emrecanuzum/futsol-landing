@@ -1,7 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import FootballField from "../../public/field.jpg";
+import FootballField from "../../public/field.jpeg";
 import MiddleText from "./components/middle-text";
+import { BsTwitterX } from "react-icons/bs";
+import { FaMedium } from "react-icons/fa";
+import Link from "next/link";
 
 const LandingPage = () => {
   return (
@@ -13,6 +16,26 @@ const LandingPage = () => {
             src={FootballField}
             alt="football-field"
           />
+          <div className="fixed gap-3 flex top-5">
+            <Link
+              className=" shadow-glow md:bg-opacity-35 bg-black hover:bg-white hover:text-black text-white shadow-white rounded-lg flex border p-2 top-10 items-center"
+              href={"https://twitter.com/playfutsol"}
+              target="blank"
+            >
+              <BsTwitterX className="" size={16} />
+              <p className=" font-thin pl-1">playfutsol</p>
+            </Link>
+
+            <Link
+              className=" shadow-glow md:bg-opacity-35 bg-black hover:bg-white hover:text-black text-white shadow-white rounded-lg flex border p-2 top-10 items-center"
+              href={"https://medium.com/@futsolgamenft"}
+              target="blank"
+            >
+              <FaMedium className="" size={20} />
+              <p className=" font-thin pl-1">futsolgame</p>
+            </Link>
+          </div>
+
           <MiddleText />
         </div>
       </div>
