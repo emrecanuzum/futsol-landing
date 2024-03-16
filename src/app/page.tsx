@@ -10,9 +10,9 @@ const LandingPage = () => {
   return (
     <div className="bg-[#160023] overflow-hidden h-screen">
       <div className=" justify-center  flex max-w-screen">
-        <div className="md:w-full overflow-hidden bg-[#160023] w-screen  md:min-h-screen  text-auto justify-center md:flex">
+        <div className="md:w-full  bg-[#160023] w-screen  md:min-h-screen  text-auto justify-center md:flex">
           <Image
-            className=" scale-[3] overflow-hidden mt-[75%] top-1/2 md:top-0  aspect-video  md:scale-100 md:relative w-screen md:w-[96vw] md:mt-10 "
+            className=" scale-[3]  mt-[75%] top-1/2 md:top-0  aspect-video  md:scale-100 md:relative w-screen md:w-[96vw] md:mt-10 "
             src={FootballField}
             alt="football-field"
           />
@@ -28,7 +28,7 @@ const LandingPage = () => {
 
             <Link
               className=" shadow-glow md:bg-opacity-35 bg-black hover:bg-white hover:text-black text-white shadow-white rounded-lg flex border p-2 top-10 items-center"
-              href={"https://medium.com/@futsolgamenft"}
+              href={"https://medium.com/@playfutsol"}
               target="blank"
             >
               <FaMedium className="" size={20} />
