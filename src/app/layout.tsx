@@ -9,7 +9,7 @@ const belanosima = Belanosima({
   subsets: ["latin"],
 });
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Futsol Game",
@@ -24,6 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body className={belanosima.className}>{children}</body>
     </html>
   );
