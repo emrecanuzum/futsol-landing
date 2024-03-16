@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import FootballField from "../../public/field.png";
+import FootballField from "../../public/field.jpg";
 import MiddleText from "./components/middle-text";
 
 const LandingPage = () => {
