@@ -18,7 +18,7 @@ const LandingPage = () => {
           />
           <div className="w-full fixed gap-3 md:left-auto mx-auto justify-center flex top-5">
             <Link
-              className=" shadow-glow hover:animate-spin md:bg-opacity-35 bg-black hover:bg-white hover:text-black text-white shadow-white rounded-lg flex border p-2 top-10 items-center"
+              className=" shadow-glow md:bg-opacity-35 bg-black hover:bg-white hover:text-black text-white shadow-white rounded-lg flex border p-2 top-10 items-center"
               href={"https://twitter.com/playfutsol"}
               target="blank"
             >
