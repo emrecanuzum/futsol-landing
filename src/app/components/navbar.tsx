@@ -1,28 +1,41 @@
+"use client";
 import React from "react";
 
 const NavbarComponent = () => {
-  // Double the number of items for a smooth looping effect
-  const items = Array.from({ length: 10 }); // Create an array with 20 items
+  const items = Array.from({ length: 10 }); // Adjust the length based on your content and screen size
 
   return (
-    <div className="overflow-hidden md:h-screen md:sticky bg-aquagreen">
+    <div
+      className="overflow-hidden sticky top-0 md:h-screen bg-aquagreen"
+      style={{ height: "100vh" }}
+    >
       <div
-        className="grid w-full px-4 gap-6 justify-center pt-4"
+        className="flex flex-col gap-1 justify-center items-center"
         style={{
           animation: "smoothScroll 10s linear infinite",
-          display: "flex",
-          flexDirection: "column",
+          height: "200%", // Double the container height for a seamless loop
         }}
       >
         {items.map((_, index) => (
           <div
             key={index}
-            className="border bg-black bg-opacity-80 text-aquagreen px-12 text-5xl h-32 flex text-center justify-center items-center border-black"
+            className="border bg-black bg-opacity-80 text-aquagreen text-5xl h-1/5 w-5/6 m-3 flex text-center justify-center items-center border-black"
           >
-            PLAYER NFT
+            NFT
           </div>
         ))}
       </div>
+
+      <style jsx global>{`
+        @keyframes smoothScroll {
+          0% {
+            transform: translateY(-50%);
+          }
+          100% {
+            transform: translateY(0%);
+          }
+        }
+      `}</style>
     </div>
   );
 };

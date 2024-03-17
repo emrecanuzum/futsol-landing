@@ -2,11 +2,13 @@ import React from "react";
 import Logo from "../../../public/beyaz-logo-png.png";
 import Image from "next/image";
 import Link from "next/link";
+import { BsTwitterX } from "react-icons/bs";
+import { FaMedium } from "react-icons/fa";
 
 const HeaderComponent = () => {
   return (
     <div className="w-full h-28  bg-primary">
-      <div className="w-full container mx-auto">
+      <div className="w-full px-5 md:px-20 mx-auto">
         <div className="items-center flex justify-between">
           <div className="flex items-center">
             <Image src={Logo} className="h-20 w-20 my-4" alt="logo"></Image>
@@ -14,20 +16,58 @@ const HeaderComponent = () => {
               <Link className="hover:text-aquagreen" href={"/home"}>
                 Home
               </Link>
-              <Link className="hover:text-aquagreen" href={"/about"}>
+              <p className="hover:text-aquagreen cursor-not-allowed opacity-50">
+                About
+              </p>
+              <p className="hover:text-aquagreen cursor-not-allowed opacity-50">
+                My Team
+              </p>
+              <p className="hover:text-aquagreen cursor-not-allowed opacity-50">
+                League
+              </p>
+
+              {/* <Link
+                className="hover:text-aquagreen cursor-not-allowed opacity-50"
+                href={"/about"}
+              >
                 About
               </Link>
-              <Link className="hover:text-aquagreen" href={"/team"}>
+              <Link
+                className="hover:text-aquagreen cursor-not-allowed opacity-50"
+                href={"/team"}
+              >
                 My Team
               </Link>
-              <Link className="hover:text-aquagreen" href={"/league"}>
+              <Link
+                className="hover:text-aquagreen cursor-not-allowed opacity-50"
+                href={"/league"}
+              >
                 League
-              </Link>
+              </Link> */}
             </div>
           </div>
-          <button className="border text-lg text-black hover:bg-primary bg-secondary hover:shadow-glow p-3 h-auto hover:text-white">
-            Connect Wallet
-          </button>
+          <div className="flex gap-6">
+            <div className="flex gap-3 items-center">
+              <Link
+                className=" flex items-center"
+                href={"https://twitter.com/playfutsol"}
+                target="blank"
+              >
+                <BsTwitterX className="text-aquagreen " size={20} />
+              </Link>
+
+              <Link
+                className=" flex items-center"
+                href={"https://medium.com/@playfutsol"}
+                target="blank"
+              >
+                <FaMedium className=" text-aquagreen" size={24} />
+              </Link>
+            </div>
+            <button className="border text-lg text-black hover:bg-primary bg-secondary hover:shadow-glow p-3 h-auto hover:text-white">
+              Connect Wallet
+            </button>
+          </div>
         </div>
       </div>
     </div>

@@ -69,7 +69,7 @@
   }
   100% {
     transform: translateY(
-      -50%
+      -10%
     ); /* Move up by half the container's height to start over seamlessly */
   }
 }
