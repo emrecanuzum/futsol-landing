@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const HomePage = () => {
   return (
-    <div className=" min-h-screen mt-10" style={{}}>
+    <div className=" min-h-screen my-10" style={{}}>
       <style jsx global>{`
         p {
           font-size: 1.2vw;

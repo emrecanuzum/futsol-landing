@@ -16,13 +16,13 @@ const HeaderComponent = () => {
               <Link className="hover:text-aquagreen" href={"/home"}>
                 Home
               </Link>
-              <p className="hover:text-aquagreen cursor-not-allowed opacity-50">
+              <p className="hover:text-aquagreen cursor-not-allowed text-2xl opacity-50">
                 About
               </p>
-              <p className="hover:text-aquagreen cursor-not-allowed opacity-50">
+              <p className="hover:text-aquagreen cursor-not-allowed text-2xl opacity-50">
                 My Team
               </p>
-              <p className="hover:text-aquagreen cursor-not-allowed opacity-50">
+              <p className="hover:text-aquagreen cursor-not-allowed text-2xl opacity-50">
                 League
               </p>
 
