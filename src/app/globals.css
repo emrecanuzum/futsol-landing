@@ -63,3 +63,13 @@
     --color-secondary: #63f3b7;
   }
 }
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(
+      -50%
+    ); /* Move up by half the container's height to start over seamlessly */
+  }
+}
