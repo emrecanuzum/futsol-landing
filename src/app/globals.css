@@ -56,3 +56,20 @@
   transition: 400ms mask ease;
   will-change: mask;
 }
+
+@layer base {
+  :root {
+    --color-primary: #63f3b7;
+    --color-secondary: #63f3b7;
+  }
+}
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(
+      -10%
+    ); /* Move up by half the container's height to start over seamlessly */
+  }
+}
