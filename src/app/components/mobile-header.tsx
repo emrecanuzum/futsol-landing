@@ -15,11 +15,15 @@ const MobileHeader = () => {
   };
 
   return (
-    <div className="w-full h-28 bg-primary relative">
-      <div className="w-full px-5 md:px-20 mx-auto">
+    <div className="w-full items-center md:h-28 h-24 bg-primary relative">
+      <div className="w-full items-center px-5 md:px-20 mx-auto">
         <div className="items-center flex justify-between">
           <div className="flex items-center">
-            <Image src={Logo} className="h-20 w-20 my-4" alt="logo" />
+            <Image
+              src={Logo}
+              className="md:h-20 h-16 w-16 md:w-20 my-4"
+              alt="logo"
+            />
             <div className="hidden md:flex gap-5 ml-16 md:text-2xl">
               <Link className="hover:text-aquagreen" href={"/home"}>
                 Home
@@ -56,7 +60,12 @@ const MobileHeader = () => {
               Connect Wallet
             </button>
             <button className="md:hidden text-aquagreen" onClick={toggleMenu}>
-              {isMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+              {isMenuOpen ? (
+                // <FiX size={36} />
+                <FiMenu size={36} />
+              ) : (
+                <FiMenu size={36} />
+              )}
             </button>
           </div>
         </div>

@@ -11,7 +11,11 @@ const HeaderComponent = () => {
       <div className="w-full px-5 md:px-20 mx-auto">
         <div className="items-center flex justify-between">
           <div className="flex items-center">
-            <Image src={Logo} className="h-20 w-20 my-4" alt="logo"></Image>
+            <Image
+              src={Logo}
+              className="md:h-20 md:w-20 h-12 w-12 my-4"
+              alt="logo"
+            ></Image>
             <div className="md:flex gap-5 ml-16 md:text-2xl">
               <Link className="hover:text-aquagreen" href={"/home"}>
                 Home
