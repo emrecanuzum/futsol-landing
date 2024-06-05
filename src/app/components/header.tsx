@@ -12,7 +12,7 @@ const HeaderComponent = () => {
         <div className="items-center flex justify-between">
           <div className="flex items-center">
             <Image src={Logo} className="h-20 w-20 my-4" alt="logo"></Image>
-            <div className="flex gap-5 ml-16 md:text-2xl">
+            <div className="md:flex gap-5 ml-16 md:text-2xl">
               <Link className="hover:text-aquagreen" href={"/home"}>
                 Home
               </Link>
